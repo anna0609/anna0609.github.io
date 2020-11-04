@@ -1,0 +1,37 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+
+---
+
+# This is Minjie's awesome website
+
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+
+## Here's a subsection
+
+```{r}
+rnorm(10)
+```
+
+
+## Links
+Let's link to useful tools for data science:
+
+* [Google] (https://www.google.com/)
+* [P8150](https://p8150.com)
+
+## Local image
+
+Here's me hiking on the Bear Mountain:
+
+![](images/hiking.jpg)
+
+## Link to the page within the site
+
+[About me](about.html)

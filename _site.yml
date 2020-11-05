@@ -9,7 +9,14 @@ navbar:
       href: mailto:<mb4757@columbia.edu>
     - icon: fa-github fa-lg
       href: http://github.com/anna0609/
+    - icon: fab fa-instagram
+      href: https://www.instagram.com/annabao0609/
+    - icon: fab fa-facebook
+      href: https://www.facebook.com/profile.php?id=100004875374663
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/anna0609
       
+ 
 output:
   html_document:
     theme: cosmo

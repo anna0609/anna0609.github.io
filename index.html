@@ -414,28 +414,35 @@ div.tocify {
 <div id="this-is-minjies-awesome-website" class="section level1">
 <h1>This is Minjie’s awesome website</h1>
 <p><img src="images/giphy.gif" /></p>
-<p>I am a first year MS biostatistics student at Columbia University</p>
+<p>I am a first year MS biostatistics student at Columbia University. Thank you for visiting my website!</p>
 <div id="coding-and-statistics" class="section level2">
-<h2>coding and statistics</h2>
-<p>I love data science and statistics, especially machine learning and hypothesis tests.</p>
-<p>Here’s my t-test example:</p>
-<pre class="r"><code>sample = rnorm(20, mean = 120, sd = 15)
-t.test(sample, mu=120)</code></pre>
-<pre><code>## 
-##  One Sample t-test
-## 
-## data:  sample
-## t = -0.20929, df = 19, p-value = 0.8364
-## alternative hypothesis: true mean is not equal to 120
-## 95 percent confidence interval:
-##  113.8025 125.0707
-## sample estimates:
-## mean of x 
-##  119.4366</code></pre>
-<pre class="r"><code>t_critical = qt(0.05,19)</code></pre>
+<h2>Coding and Statistics</h2>
+<p>I love data science and statistics, especially machine learning and simulations.</p>
+<p>Here’s one example of Type I error simulation of 100 samples:</p>
+<pre class="r"><code>set.seed(99)
+n.sample2 &lt;- 100
+#Sample indices
+sample.indices &lt;- list()
+n = 0
+se = 15/sqrt(20)
+for (i in 1:n.sample2) {
+  sample2 &lt;- rnorm(20, mean = 120, sd = 15)
+sample2_mean = mean(sample2)
+z_stats &lt;- (sample2_mean-120)/se
+z_crit &lt;- qnorm(0.05)
+if(z_stats &gt;= z_crit) {
+  #print(&quot;0&quot;)
+} else {
+  #print(&quot;1 Type I Error&quot;)
+  n = n + 1
+}
+}
+percentage = n/100
+print(percentage)</code></pre>
+<pre><code>## [1] 0.06</code></pre>
 </div>
-<div id="links" class="section level2">
-<h2>Links</h2>
+<div id="key-links" class="section level2">
+<h2>Key Links</h2>
 <p>Here’s my LinkedIn, Instagram, and Facebook links.</p>
 <p>Appreciate your following!!!</p>
 <ul>
@@ -449,14 +456,19 @@ t.test(sample, mu=120)</code></pre>
 <h2>Hobbies</h2>
 <p>Love traveling all over the world and playing the piano!</p>
 <p>Here’s me hiking on Bear Mountain in NY:</p>
-<p><img src="images/hiking.jpg" /></p>
+<p><img src ="images/hiking.jpg" style = "length:75%"></p>
 </div>
-<div id="link-to-my-resume-within-the-site" class="section level2">
-<h2>Link to my resume within the site</h2>
+<div id="fun-facts" class="section level2">
+<h2>Fun Facts</h2>
+<p>I really want to adopt or buy a Maltese puppy in the future.</p>
+<p><img src="images/puppy.gif" /></p>
+</div>
+<div id="my-resume-link" class="section level2">
+<h2>My Resume Link</h2>
 <p><a href="about.html">RESUME</a></p>
 </div>
-<div id="my-personality-and-skills" class="section level2 tabset">
-<h2>My personality and skills</h2>
+<div id="personality-and-skills" class="section level2 tabset">
+<h2>Personality and Skills</h2>
 <div id="personality" class="section level3">
 <h3>Personality</h3>
 <p>detail-oriented</p>
@@ -483,6 +495,12 @@ t.test(sample, mu=120)</code></pre>
 <p>Mandarin (fluent)</p>
 <p>French (proficient)</p>
 <p>Japanese (basic)</p>
+</div>
+<div id="certificates" class="section level3">
+<h3>Certificates</h3>
+<p>SAS Certified Specialist: Base Programming Using SAS 9.4</p>
+<p>SAS Certified Professional: Advanced Programming Using SAS 9.4</p>
+<p>Youth Mentoring Theory and Practice</p>
 </div>
 </div>
 </div>

@@ -12,22 +12,39 @@ output:
 
 ![](images/giphy.gif)
 
-I am a first year MS biostatistics student at Columbia University
+I am a first year MS biostatistics student at Columbia University. Thank you for visiting my website!
 
 
-## coding and statistics
+## Coding and Statistics
 
-I love data science and statistics, especially machine learning and hypothesis tests.
+I love data science and statistics, especially machine learning and simulations.
 
-Here's my t-test example:
+Here's one example of Type I error simulation of 100 samples:
 ```{r message=FALSE}
-sample = rnorm(20, mean = 120, sd = 15)
-t.test(sample, mu=120)
-t_critical = qt(0.05,19)
+set.seed(99)
+n.sample2 <- 100
+#Sample indices
+sample.indices <- list()
+n = 0
+se = 15/sqrt(20)
+for (i in 1:n.sample2) {
+  sample2 <- rnorm(20, mean = 120, sd = 15)
+sample2_mean = mean(sample2)
+z_stats <- (sample2_mean-120)/se
+z_crit <- qnorm(0.05)
+if(z_stats >= z_crit) {
+  #print("0")
+} else {
+  #print("1 Type I Error")
+  n = n + 1
+}
+}
+percentage = n/100
+print(percentage)
 ```
 
 
-## Links
+## Key Links
 Here's my LinkedIn, Instagram, and Facebook links.
 
 Appreciate your following!!!
@@ -44,16 +61,22 @@ Love traveling all over the world and playing the piano!
 
 Here’s me hiking on Bear Mountain in NY:
 
-![](images/hiking.jpg)
+<img src ="images/hiking.jpg" style = "length:75%">
 
 
+## Fun Facts
 
-## Link to my resume within the site
+I really want to adopt or buy a Maltese puppy in the future.
+
+![](images/puppy.gif)
+
+
+## My Resume Link
 
 [RESUME](about.html)
 
 
-## My personality and skills {.tabset}
+## Personality and Skills {.tabset}
 
 ### Personality
 
@@ -100,3 +123,10 @@ French (proficient)
 
 Japanese (basic)
 
+### Certificates
+
+SAS Certified Specialist: Base Programming Using SAS 9.4
+
+SAS Certified Professional: Advanced Programming Using SAS 9.4
+
+Youth Mentoring Theory and Practice

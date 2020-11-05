@@ -16,6 +16,7 @@ navbar:
     - icon: fab fa-linkedin
       href: https://www.linkedin.com/in/anna0609
       
+      
  
 output:
   html_document:

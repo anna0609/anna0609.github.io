@@ -10,41 +10,93 @@ output:
 
 # This is Minjie's awesome website
 
+![](images/giphy.gif)
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+I am a first year MS biostatistics student at Columbia University
 
 
-## Here's a subsection
+## coding and statistics
 
-```{r}
-rnorm(10)
+I love data science and statistics, especially machine learning and hypothesis tests.
+
+Here's my t-test example:
+```{r message=FALSE}
+sample = rnorm(20, mean = 120, sd = 15)
+t.test(sample, mu=120)
+t_critical = qt(0.05,19)
 ```
 
 
 ## Links
-Let's link to useful tools for data science:
+Here's my LinkedIn, Instagram, and Facebook links.
 
-* [Google] (https://www.google.com/)
-* [P8150](https://p8150.com)
+Appreciate your following!!!
 
-## Local image
+* [LinkedIn] (https://www.linkedin.com/in/anna0609)
+* [Instagram] (https://www.instagram.com/annabao0609/)
+* [Facebook] (https://www.facebook.com/profile.php?id=100004875374663)
 
-Here's me hiking on the Bear Mountain:
+<img src ="images/support.gif" style = "width:60%">
+
+
+## Hobbies
+Love traveling all over the world and playing the piano!
+
+Here’s me hiking on Bear Mountain in NY:
 
 ![](images/hiking.jpg)
-<img src ="images/hiking.jpg" style = "width:75%">
-
-## Link to the page within the site
-
-[About me](about.html)
 
 
-## Quarterly Results {.tabset}
 
-### By Product
+## Link to my resume within the site
 
-This is my first tab
+[RESUME](about.html)
 
-### By Region
 
-This is my second tab
+## My personality and skills {.tabset}
+
+### Personality
+
+detail-oriented
+
+communicative
+
+curiosity
+
+proactive
+
+gritty
+
+
+
+### Skills
+
+SAS
+
+R
+
+Python
+
+Java
+
+SQL
+
+Matlab
+
+Microsoft (Excel, PowerPoint, Word)
+
+ANOVA
+
+Tableau
+
+
+### Languages
+
+English (fluent)
+
+Mandarin (fluent)
+
+French (proficient)
+
+Japanese (basic)
+

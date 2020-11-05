@@ -47,8 +47,10 @@ instacart %>%
 
 #Plotly plots
 
+
+
 ## boxplot
-```{r boxplot}
+```{r message=FALSE}
 instacart %>%
   filter(product_name %in%  c("Organic Whole Milk", "2% Reduced Fat Milk", "Organic Reduced Fat 2% Milk")) %>% 
   plot_ly(
@@ -61,22 +63,11 @@ instacart %>%
 ```
 
 
-##scatter
-```{r}
-instacart %>% 
-  filter(aisle %in% c("fresh fruits"), order_number == 100, reordered ==1) %>% 
-  mutate(text_label = str_c("Order_dow: ", order_dow, "\nOrder_number: ", order_number, "\norder_hour_of_day: ", order_hour_of_day)) %>% 
-  plot_ly(
-    y = ~order_hour_of_day, x = ~product_name, color = ~aisle, text = ~text_label, alpha = .5, type = "scatter", mode = "markers"
-    ) %>% 
-  layout(
-  title = "Fresh fruits order_hour_of_day scatter plot"
-  )
-```
+
 
 ## bar plot
 
-```{r}
+```{r message=FALSE}
 instacart %>% 
   count(aisle) %>% 
   filter(n>10000) %>% 
@@ -91,6 +82,20 @@ instacart %>%
   )
 ```
 
+## scatter
+```{r message=FALSE}
+instacart %>% 
+  filter(aisle %in% c("fresh fruits"), order_number == 100, reordered ==1, order_dow ==1) %>%
+  mutate(text_label = str_c("Order_dow: ", order_dow, "\nOrder_number: ", order_number, "\norder_hour_of_day: ", order_hour_of_day)) %>% 
+  plot_ly(
+    y = ~order_hour_of_day, x = ~product_name, color = ~aisle, text = ~text_label, alpha = .5, type = "scatter"
+    ) %>% 
+  layout(
+    xaxis =list(title = FALSE),
+  title = "Fresh fruits order_hour_of_day scatter plot"
+  )
+
+```
 
 
 

@@ -1,0 +1,97 @@
+---
+title: "Plotly examples"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Examples of plotly
+
+We're gonna look at Instacart data.
+
+```{r}
+library(tidyverse)
+library("p8105.datasets")
+library(plotly)
+```
+
+
+# Loading data
+```{r instacart}
+data("instacart")
+instacart %>% 
+  count(aisle) %>% 
+  filter(n>10000) %>% 
+  arrange(desc(n))
+```
+
+```{r}
+instacart %>%
+  filter(aisle == "milk") %>% 
+  group_by(product_name) %>% 
+  count(product_name) %>% 
+  arrange(desc(n)) 
+```
+
+```{r}
+instacart %>% 
+  filter(aisle %in% c("fresh vegetables", "fresh fruits"))%>% 
+  group_by(aisle) %>% 
+  count(product_name) %>% 
+  arrange(desc(n)) %>% 
+  filter(n>1000)
+  
+```
+
+
+#Plotly plots
+
+## boxplot
+```{r boxplot}
+instacart %>%
+  filter(product_name %in%  c("Organic Whole Milk", "2% Reduced Fat Milk", "Organic Reduced Fat 2% Milk")) %>% 
+  plot_ly(
+    x = ~product_name, y = ~order_number, color = ~product_name,
+    alpha = .5, type = "box", mode = "markers"
+    ) %>% 
+  layout(
+    title = "Top 3 most popular milk's order_number distribution"
+  )
+```
+
+
+##scatter
+```{r}
+instacart %>% 
+  filter(aisle %in% c("fresh fruits"), order_number == 100, reordered ==1) %>% 
+  mutate(text_label = str_c("Order_dow: ", order_dow, "\nOrder_number: ", order_number, "\norder_hour_of_day: ", order_hour_of_day)) %>% 
+  plot_ly(
+    y = ~order_hour_of_day, x = ~product_name, color = ~aisle, text = ~text_label, alpha = .5, type = "scatter", mode = "markers"
+    ) %>% 
+  layout(
+  title = "Fresh fruits order_hour_of_day scatter plot"
+  )
+```
+
+## bar plot
+
+```{r}
+instacart %>% 
+  count(aisle) %>% 
+  filter(n>10000) %>% 
+  mutate(
+    aisle = factor(aisle),
+    aisle = fct_reorder(aisle,n)
+  ) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle,
+          type = "bar", colors = "viridis") %>% 
+    layout(
+    title = "Aisles more than 10000 ordered"
+  )
+```
+
+
+
+
+

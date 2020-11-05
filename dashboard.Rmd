@@ -1,0 +1,86 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source : embed
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library("p8105.datasets")
+library(plotly)
+library(flexdashboard)
+```
+
+```{r}
+data("instacart") 
+instacart %>% 
+  count(aisle) %>% 
+  arrange(desc(n)) %>% 
+  filter(n>10000) %>% 
+  mutate(
+    aisle = factor(aisle),
+    aisle = fct_reorder(aisle,n)
+    )
+```
+
+```{r}
+instacart %>%
+  filter(aisle == "milk") %>% 
+  group_by(product_name) %>% 
+  count(product_name) %>% 
+  arrange(desc(n)) 
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+instacart %>% 
+  count(aisle) %>% 
+  filter(n>10000) %>% 
+     mutate(
+    aisle = factor(aisle),
+    aisle = fct_reorder(aisle,n)
+    ) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle,
+          type = "bar", colors = "viridis")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart %>%
+  filter(product_name %in%  c("Organic Whole Milk", "2% Reduced Fat Milk", "Organic Reduced Fat 2% Milk")) %>% 
+  plot_ly(
+    x = ~product_name, y = ~order_number, color = ~product_name,
+    alpha = .5, type = "box", mode = "markers"
+    ) %>% 
+  layout(
+    title = "Top 3 most popular milk's order_number distribution"
+  )
+```
+
+### Chart C
+
+```{r}
+instacart %>% 
+  filter(aisle %in% c("fresh fruits"), order_number == 100, reordered ==1) %>% 
+  mutate(text_label = str_c("Order_dow: ", order_dow, "\nOrder_number: ", order_number, "\norder_hour_of_day: ", order_hour_of_day)) %>% 
+  plot_ly(
+    y = ~order_hour_of_day, x = ~product_name, color = ~aisle, text = ~text_label, alpha = .5, type = "scatter", mode = "markers"
+    ) %>% 
+  layout(
+  title = "Fresh fruits order_hour_of_day scatter plot"
+  )
+# rmarkdown::render("dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")
+```
+
+

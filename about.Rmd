@@ -10,37 +10,34 @@ output:
 
 ### EDUCATION
 
-#### Columbia University Mailman School of Public Health New York, NY
-
+#### Columbia University Mailman School of Public Health        New York, NY
 Master of Science in Biostatistics, Theory & Method Track       May 2022
 
 Coursework: Data Science; Biostatistical Method I; Epidemiology
 
-#### Peking University Beijing, China
-
-Summer school in Biostatistics        Aug. 2020
+#### Peking University                                          Beijing, China
+Summer school in Biostatistics                                  Aug. 2020
 
 Coursework: Causal Inference; Statistical Learning and Personalized Medicine; Intro to Deep Learning Methods; Longitudinal Data Analysis; Statistical Methods in Diagnostic Medicine; Adaptive Design Methods in Clinical Trials
 
-#### Rutgers University New Brunswick, NJ
+#### Rutgers University                                         New Brunswick, NJ
 
 Bachelor of Arts in Statistics-Mathematics; Minor in Economics
-
-GPA: 3.6        May 2020
+GPA: 3.6                                                        May 2020
 
 Coursework: Stochastic Processes; Real Analysis; Regression Methods; Mathematical Theory of Probability; Intro to Computer Science; Computational & Graphical Statistics; Experimental Design; Intermediate Microeconomics; Econometric
 
 ### WORK EXPERIENCE
 
-Data Analyst - Agricultural Bank of China         June - Aug 2019
+Data Analyst - Agricultural Bank of China                       June - Aug 2019
 
 • Conducted statistical analysis and data modeling to cleanse, analysis and predict the structured and unstructured data used for potential clients. Used quantitative data gathered to develop an understanding of customer behaviors.
 
 • Utilized data visualization to present a data report that helped guide decisions for the bank to seek potential clients, which raised the successful probability to sell financial products and credit loan by 22%.
 
-### PROJECT
+### PROJECTS
 
-####Banknotes Deep Learning Project August 2019 
+#### Banknotes Deep Learning Project                             August 2019 
 
 • Imported Bank Authentication Data Set from the UCI repository to identify a bank has a false or real banknote.
 
@@ -48,7 +45,7 @@ Data Analyst - Agricultural Bank of China         June - Aug 2019
 
 • Applied Tensor Flow to create a prediction function to evaluate the deep neural network model and achieved 99% accuracy of the DNN model. Compared it with random forest classifier algorithm that almost get the same accuracy.
 
-#### New Jersey Real Estate Price Prediction Model July 2018
+#### New Jersey Real Estate Price Prediction Model              July 2018
 
 • Implemented Python data framework to make price prediction model for NJ real estate market, designed to help owners/realtors predict a realistic home selling price based upon address and features.
 
@@ -58,14 +55,15 @@ Data Analyst - Agricultural Bank of China         June - Aug 2019
 
 ### RESEARCH EXPERIENCE
 
-#### Undergraduate Researcher - Rutgers University Genetics Department New Brunswick, April 2018 – May 2020
+#### Undergraduate Researcher - Rutgers University Genetics Department New Brunswick        April 2018 – May 2020
 
 • Used linear regression and 1-way, 2-way and 3-way ANOVA tables, revealed that DRD3, DRD4 and GABA2 gene expressions levels increased significantly with social stimulation-mediated effects on the ethanol intake of the drinking mice.
 
 • Applied Unsupervised Machine Learning in python by K-means clustering to classify 36 mice into 3 groups based on 52 days’ time-series data and the mice’s alcohol drinking features.
 
 • Conducted Supervised Machine Learning in python to predict the survival rate of passengers in the Titanic shipwreck. Compared different prediction models: Decision Trees, Random Forest, Logistic Regression, KNN, SVM, and Stochastic Gradient Descent. Concluded Random Forest as the best model, which achieved the highest accuracy: 86.74%.
-Research Assistant - The Cardiovascular Institute of New Jersey New Brunswick, Nov 2018 – May 2019
+
+#### Research Assistant - The Cardiovascular Institute of New Jersey New Brunswick, Nov     2018 – May 2019
 
 • Conducted Natural Language Processing, and applied text mining, “tm” package in R, to extract useful patterns from 5000 unstructured text databases to identify doctors in RWJ hospital to enable streamlined recording of clinical notes.
 
@@ -78,6 +76,7 @@ Wells Fargo Mentee - Rutgers University WINGS Mentoring Program NJ, Sept 2018 - 
 Team Leader - National Geographic Photo Camp Malta, May 22 - May 28 2019
 
 ### SKILLS
+
 • Technical: SAS, R, Python, Java, SQL, Matlab, Microsoft (Excel, PowerPoint, Word), Tableau
 
 • Certificate: SAS Certified Professional: Advanced Programming Using SAS 9.4; Youth Mentoring Theory and Practice

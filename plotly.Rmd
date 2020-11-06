@@ -7,11 +7,11 @@ output:
     toc_float: true
 ---
 
-# Examples of plotly
+# Instacart plotly
 
 We're gonna look at Instacart data.
 
-```{r}
+```{r message=FALSE}
 library(tidyverse)
 library("p8105.datasets")
 library(plotly)
@@ -19,7 +19,7 @@ library(plotly)
 
 
 # Loading data
-```{r instacart}
+```{r instacart, message=FALSE}
 data("instacart")
 instacart %>% 
   count(aisle) %>% 
@@ -27,7 +27,7 @@ instacart %>%
   arrange(desc(n))
 ```
 
-```{r}
+```{r, message=FALSE}
 instacart %>%
   filter(aisle == "milk") %>% 
   group_by(product_name) %>% 
@@ -35,7 +35,7 @@ instacart %>%
   arrange(desc(n)) 
 ```
 
-```{r}
+```{r, message=FALSE}
 instacart %>% 
   filter(aisle %in% c("fresh vegetables", "fresh fruits"))%>% 
   group_by(aisle) %>% 
@@ -46,7 +46,7 @@ instacart %>%
 ```
 
 
-#Plotly plots
+# Plotly plots
 
 ## scatter
 ```{r message=FALSE}
@@ -67,7 +67,7 @@ instacart %>%
   filter(product_name %in%  c("Organic Whole Milk", "2% Reduced Fat Milk", "Organic Reduced Fat 2% Milk")) %>% 
   plot_ly(
     x = ~product_name, y = ~order_number, color = ~product_name,
-    alpha = .5, type = "box", mode = "markers"
+    alpha = .5, type = "box"
     ) %>% 
   layout(
     title = "Top 3 most popular milk's order_number distribution"

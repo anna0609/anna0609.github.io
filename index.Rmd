@@ -13,7 +13,7 @@ output:
 ![](images/giphy.gif)
 
 I am a first year MS biostatistics student at Columbia University. Thank you for visiting my website!<br/>
-
+<br/>
 
 ## Coding and Statistics
 
@@ -42,7 +42,8 @@ if(z_stats >= z_crit) {
 percentage = n/100
 print(percentage)
 ```
-
+<br/>
+<br/>
 
 ## Key Links
 Here's my LinkedIn, Instagram, and Facebook links.
@@ -54,8 +55,9 @@ Appreciate your following!!!
 * [Facebook] (https://www.facebook.com/profile.php?id=100004875374663)
 
 <img src ="images/support.gif" style = "width:60%">
-<br/>
 
+<br/>
+<br/>
 
 ## Hobbies
 Love traveling all over the world and playing the piano!
@@ -63,14 +65,17 @@ Love traveling all over the world and playing the piano!
 Here’s me hiking on Bear Mountain in NY:
 
 <img src ="images/hiking.jpg" style = "length:75%">
-<br/>
 
+<br/>
+<br/>
 
 ## Fun Facts
 
 I really want to adopt or buy a Maltese puppy in the future.
 
 ![](images/puppy.gif)
+
+<br/>
 <br/>
 
 

@@ -8,16 +8,16 @@ output:
 
 ---
 
-# Welcome to Minjie's awesome website
+## Welcome to Minjie's website
 
 ![](images/giphy.gif)
 
-I am a first year MS biostatistics student at Columbia University. Thank you for visiting my website!
+I am a first year MS biostatistics student at Columbia University. Thank you for visiting my website!<br/>
 
 
 ## Coding and Statistics
 
-I love data science and statistics, especially machine learning and simulations.
+I love data science and statistics, especially machine learning and simulations.<br/>
 
 Here's one example of Type I error simulation of 100 samples:
 ```{r message=FALSE}
@@ -54,6 +54,7 @@ Appreciate your following!!!
 * [Facebook] (https://www.facebook.com/profile.php?id=100004875374663)
 
 <img src ="images/support.gif" style = "width:60%">
+<br/>
 
 
 ## Hobbies
@@ -62,6 +63,7 @@ Love traveling all over the world and playing the piano!
 Here’s me hiking on Bear Mountain in NY:
 
 <img src ="images/hiking.jpg" style = "length:75%">
+<br/>
 
 
 ## Fun Facts
@@ -69,12 +71,14 @@ Here’s me hiking on Bear Mountain in NY:
 I really want to adopt or buy a Maltese puppy in the future.
 
 ![](images/puppy.gif)
+<br/>
 
 
 ## My Resume Link
 
 [RESUME](about.html)
 
+<br/>
 
 ## Personality and Skills {.tabset}
 

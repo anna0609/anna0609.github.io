@@ -89,6 +89,7 @@ instacart %>%
   plot_ly(x = ~aisle, y = ~n, color = ~aisle,
           type = "bar", colors = "viridis") %>% 
     layout(
+      xaxis = list(title = FALSE),
     title = "Aisles more than 10000 ordered"
   )
 ```

@@ -55,6 +55,20 @@ Column {data-width=650}
 ### Chart B
 
 ```{r}
+instacart %>%
+  filter(product_name %in%  c("Organic Whole Milk", "2% Reduced Fat Milk", "Organic Reduced Fat 2% Milk")) %>% 
+  plot_ly(
+    x = ~product_name, y = ~order_number, color = ~product_name,
+    alpha = .5, type = "box", mode = "markers"
+    ) %>% 
+  layout(
+    title = "Top 3 most popular milk's order_number distribution"
+  )
+```
+
+### Chart C
+
+```{r}
 instacart %>% 
   count(aisle) %>% 
   filter(n>10000) %>% 
@@ -65,22 +79,8 @@ instacart %>%
   plot_ly(x = ~aisle, y = ~n, color = ~aisle,
           type = "bar", colors = "viridis") %>% 
     layout(
+      xaxis = list(title = FALSE),
     title = "Aisles more than 10000 ordered"
-  )
-```
-
-### Chart C
-
-```{r}
-
-instacart %>%
-  filter(product_name %in%  c("Organic Whole Milk", "2% Reduced Fat Milk", "Organic Reduced Fat 2% Milk")) %>% 
-  plot_ly(
-    x = ~product_name, y = ~order_number, color = ~product_name,
-    alpha = .5, type = "box", mode = "markers"
-    ) %>% 
-  layout(
-    title = "Top 3 most popular milk's order_number distribution"
   )
 # rmarkdown::render("dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")
 ```

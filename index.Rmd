@@ -7,6 +7,7 @@ output:
     toc_float: true
 
 ---
+<br/>
 
 ## Welcome to Minjie's website
 
@@ -56,9 +57,6 @@ Appreciate your following!!!
 
 <img src ="images/support.gif" style = "width:60%">
 
-<br/>
-<br/>
-
 ## Hobbies
 Love traveling all over the world and playing the piano!
 
@@ -83,6 +81,7 @@ I really want to adopt or buy a Maltese puppy in the future.
 
 [RESUME](about.html)
 
+<br/>
 <br/>
 
 ## Personality and Skills {.tabset}

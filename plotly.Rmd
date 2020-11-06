@@ -56,7 +56,7 @@ instacart %>%
   plot_ly(
     x = ~order_hour_of_day, y = ~order_number, color = ~order_hour_of_day, text = ~text_label, alpha = .5, type = "scatter", mode = "markers", colors = "viridis") %>% 
   layout(
-  title = "Strawberries order_hour_of_day and order_number scatter plot"
+  title = "Strawberries order_hour_of_day and order_number plot"
   )
 
 ```
@@ -73,8 +73,6 @@ instacart %>%
     title = "Top 3 most popular milk's order_number distribution"
   )
 ```
-
-
 
 
 ## bar plot

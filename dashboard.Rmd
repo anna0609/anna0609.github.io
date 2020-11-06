@@ -32,7 +32,7 @@ instacart %>%
   arrange(desc(n)) 
 ```
 
-Column {data-width=350}
+Column {data-width=400}
 -----------------------------------------------------------------------
 
 ### Chart A
@@ -42,14 +42,14 @@ instacart %>%
   filter(aisle %in% c("fresh fruits"), product_name == "Strawberries") %>%
   mutate(text_label = str_c("Order_dow: ", order_dow, "\nOrder_number: ", order_number, "\norder_hour_of_day: ", order_hour_of_day)) %>% 
   plot_ly(
-    x = ~order_hour_of_day, y = ~order_number, color = ~order_hour_of_day, text = ~text_label, alpha = .5, type = "scatter", mode = "markers", colors = "viridis") %>% 
+    x = ~order_hour_of_day, y = ~order_number, color = ~order_hour_of_day, text = ~text_label, alpha = .5, type = "scatter", colors = "viridis") %>% 
   layout(
-  title = "Strawberries order_hour_of_day and order_number scatter plot"
+  title = "Strawberries order_hour_of_day and order_number plot"
   )
 
 ```
 
-Column {data-width=650}
+Column {data-width=600}
 -----------------------------------------------------------------------
 
 ### Chart B

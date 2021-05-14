@@ -15,13 +15,11 @@ output:
 
 I am a MS Biostatistics student at Columbia University. Thank you for visiting my website!<br/>
 
-<img src ="images/2.jpg" style = "width:60%">
+## Coding and Statistics:
 
-## Coding and Statistics
+I love data science and statistics, especially in building website, data visualization and modeling! More information can be found in my [RESUME](resume.html).
+<br/>
 
-I love data science and statistics, especially in building website, data visualization and modeling!<br/>
-
-More information about my coding and statistical experience can be found in my [RESUME](resume.html).
 
 Here's one example of Type I error simulation of 100 samples:
 ```{r message=FALSE}
@@ -48,12 +46,9 @@ print(percentage)
 ```
 <br/>
 
-## Key Links
+<img src ="images/2.jpg" style = "width:60%">
 
-Viewing the projects I've done by the following links:
-
-* [Project 1: NY State Nursing Home COVID-19 Project] (https://anna0609.github.io/final_project/)
-* [Project 2: Job Change Prediction] (https://drive.google.com/file/d/13a3_v6tOkKuwt7ZgH6BvH7fFJTnx2QhQ/view?usp=sharing)
+## Key Links:
 
 Viewing my LinkedIn, Github, or Instagram:
 
@@ -65,7 +60,7 @@ Appreciate your connection!!!
 
 <img src ="images/support.gif" style = "width:60%"> 
 
-## Hobbies
+## Hobbies:
 Love traveling all over the world and playing the piano! I am interested in classical music and ballet. If I am not going to be a technical person, I might be a pianist and perform my own concert around the world.
 
 Here’s me hiking on the Bear Mountain in NY:
@@ -74,7 +69,7 @@ Here’s me hiking on the Bear Mountain in NY:
 
 <br/>
 
-## Fun Facts
+## Fun Facts:
 
 I want to raise a Maltese puppy in the future. 
 
@@ -82,15 +77,15 @@ I want to raise a Maltese puppy in the future.
 
 <br/>
 
-## My Resume Link
-
-Currently looking for a full-time job actively! Targeted in Data Scientist / Front-End Developer / Statistical Programmer / Biostatistician / Consultant position.
+## My Resume by CSS:
 
 [RESUME](resume.html)
 
+Currently looking for a full-time job actively! Targeted in Data Scientist / Front-End Developer / Statistical Programmer / Biostatistician / Consultant positions.
+
 <br/>
 
-## Personality and Skills {.tabset}
+## Personality and Skills: {.tabset}
 
 ### Personality
 

@@ -208,12 +208,10 @@ h2{
 h3{
   font-size: 15px;
 }
-p{
-  font-size: 11px;
-}
+
 
 .profile-item img{
-  width: 150px;
+  width: 250px;
   float: none;
   padding: 0;
 }

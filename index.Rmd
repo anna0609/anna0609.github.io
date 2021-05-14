@@ -13,7 +13,7 @@ output:
 
 ![](images/giphy.gif)
 
-I am a first year MS biostatistics student at Columbia University. Thank you for visiting my website!<br/>
+I am a MS Biostatistics student at Columbia University. Thank you for visiting my website!<br/>
 
 
 ## Coding and Statistics
@@ -75,7 +75,7 @@ I really want to adopt or buy a Maltese puppy in the future.
 
 ## My Resume Link
 
-[RESUME](about.html)
+[RESUME](resume.html)
 
 <br/>
 

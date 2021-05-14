@@ -15,7 +15,7 @@ output:
 
 I am a MS Biostatistics student at Columbia University. Thank you for visiting my website!<br/>
 
-<img src ="images/2.jpg" style = "length:60%">
+<img src ="images/2.jpg" style = "width:60%">
 
 ## Coding and Statistics
 

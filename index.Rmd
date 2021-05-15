@@ -15,9 +15,9 @@ output:
 
 I am a MS Biostatistics student at Columbia University. Thank you for visiting my website!<br/>
 
-## Coding and Statistics:
+## Coding and Statistics
 
-I love data science and statistics, especially in building website, data visualization and modeling! More information can be found in my [RESUME](resume.html).
+I love data science and statistics, especially in building website, data visualization and modeling! More information can be found in my resume.
 <br/>
 
 
@@ -46,38 +46,7 @@ print(percentage)
 ```
 <br/>
 
-<img src ="images/2.jpg" style = "width:60%">
-
-## Key Links:
-
-Viewing my LinkedIn, Github, or Instagram:
-
-Appreciate your connection!!!
-
-* [LinkedIn] (https://www.linkedin.com/in/anna0609)
-* [Github] (https://www.linkedin.com/in/anna0609)
-* [Instagram] (https://www.instagram.com/annabao0609/)
-
-<img src ="images/support.gif" style = "width:60%"> 
-
-## Hobbies:
-Love traveling all over the world and playing the piano! I am interested in classical music and ballet. If I am not going to be a technical person, I might be a pianist and perform my own concert around the world.
-
-Here’s me hiking on the Bear Mountain in NY:
-
-<img src ="images/meme.jpg" style = "length:60%">
-
-<br/>
-
-## Fun Facts:
-
-I want to raise a Maltese puppy in the future. 
-
-![](images/puppy.gif)
-
-<br/>
-
-## My Resume by CSS:
+## Resume by CSS
 
 [RESUME](resume.html)
 
@@ -85,7 +54,7 @@ Currently looking for a full-time job actively! Targeted in Data Scientist / Fro
 
 <br/>
 
-## Personality and Skills: {.tabset}
+## Personality and Skills {.tabset}
 
 ### Personality
 
@@ -137,3 +106,34 @@ SAS Certified Specialist: Base Programming Using SAS 9.4
 SAS Certified Professional: Advanced Programming Using SAS 9.4
 
 Youth Mentoring Theory and Practice
+
+## Hobbies
+Love traveling all over the world and playing the piano! I am also interested in classical music and ballet.
+
+Here’s me hiking on the Bear Mountain in NY:
+
+<img src ="images/hiking.jpg" style = "length:60%">
+
+<br/>
+
+## Fun Facts
+
+I want to raise a Maltese puppy in the future. 
+
+![](images/puppy.gif)
+
+<br/>
+
+## Key Links
+
+Viewing my LinkedIn, Github, or Instagram:
+
+Appreciate your connection!!!
+
+* [LinkedIn] (https://www.linkedin.com/in/anna0609)
+* [Github] (https://www.linkedin.com/in/anna0609)
+* [Instagram] (https://www.instagram.com/annabao0609/)
+
+<img src ="images/2.jpg" style = "width:60%">
+<img src ="images/support.gif" style = "width:60%"> 
+

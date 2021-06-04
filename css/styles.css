@@ -218,6 +218,10 @@ h2{
   background-size: 40% 15%;
 }
 
+.education p{
+  width: 100%;
+}
+
 .project-item img{
   float: none;
   width: 300px;

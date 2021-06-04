@@ -202,19 +202,20 @@ h1{
   line-height: 1;
   margin-bottom: 20px;
 }
+
 h2{
-  font-size: 30px;
+  font-size: 40px;
 }
 
 
 .profile-item img{
-  width: 250px;
+  width: 220px;
   float: none;
   padding: 0;
 }
 
 .education {
-  background-size: 40% 30%;
+  background-size: 40% 15%;
 }
 
 .project-item img{

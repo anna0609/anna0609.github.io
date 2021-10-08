@@ -51,7 +51,7 @@ print(percentage)
 
 [RESUME](resume.html)
 
-Currently looking for a full-time job actively! Targeted in Data Scientist / Front-End Developer / Statistical Programmer / Biostatistician / Consultant positions.
+Currently looking for a full-time job actively! Targeted in Statistical Programmer / Biostatistician / Consulting / Analyst / Data Scientist / Front-End Developer positions.
 
 <br/>
 

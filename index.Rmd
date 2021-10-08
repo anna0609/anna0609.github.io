@@ -126,7 +126,7 @@ Love traveling all over the world, hiking, skiing and playing the piano! I am al
 
 Here’s a picture of me in a sunflower filed:
 
-<img src ="images/farm.jpg" style = "length:60%">
+<img src ="images/farm.jpg" style = "width:60%">
 
 <br/>
 

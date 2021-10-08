@@ -17,11 +17,12 @@ I am a MS Biostatistics student at Columbia University. Thank you for visiting m
 
 ## Coding and Statistics
 
-I love data science and statistics, especially in building website, data visualization and modeling! More information can be found in my resume.
+I love data science and statistics, especially in building website, data visualization and modeling!
+<br/>
+More information can be found in my digital resume created by CSS below.
 <br/>
 
-
-Here's one example of Type I error simulation of 100 samples:
+Here's one example of coding Type I error simulation for 100 samples:
 ```{r message=FALSE}
 set.seed(99)
 n.sample2 <- 100
@@ -53,6 +54,19 @@ print(percentage)
 Currently looking for a full-time job actively! Targeted in Data Scientist / Front-End Developer / Statistical Programmer / Biostatistician / Consultant positions.
 
 <br/>
+
+
+## Key Links
+
+Viewing my LinkedIn, Github, or Instagram:
+
+Appreciate your connection!!!
+
+* [LinkedIn] (https://www.linkedin.com/in/anna0609)
+* [Github] (https://www.linkedin.com/in/anna0609)
+* [Instagram] (https://www.instagram.com/annabao0609/)
+
+<img src ="images/support.gif" style = "width:40%"> 
 
 ## Personality and Skills {.tabset}
 
@@ -108,11 +122,11 @@ SAS Certified Professional: Advanced Programming Using SAS 9.4
 Youth Mentoring Theory and Practice
 
 ## Hobbies
-Love traveling all over the world and playing the piano! I am also interested in classical music and ballet.
+Love traveling all over the world, hiking, skiing and playing the piano! I am also very interested in classical music concert and ballet.
 
-Here’s me hiking on the Bear Mountain in NY:
+Here’s a picture of me in a sunflower filed:
 
-<img src ="images/hiking.jpg" style = "length:60%">
+<img src ="images/farm.jpg" style = "length:60%">
 
 <br/>
 
@@ -124,16 +138,9 @@ I want to raise a Maltese puppy in the future.
 
 <br/>
 
-## Key Links
-
-Viewing my LinkedIn, Github, or Instagram:
-
-Appreciate your connection!!!
-
-* [LinkedIn] (https://www.linkedin.com/in/anna0609)
-* [Github] (https://www.linkedin.com/in/anna0609)
-* [Instagram] (https://www.instagram.com/annabao0609/)
-
 <img src ="images/2.jpg" style = "width:60%">
-<img src ="images/support.gif" style = "width:60%"> 
+
+
+
+
 

@@ -13,13 +13,13 @@ output:
 
 ![](images/giphy.gif)
 
-I am a MS Biostatistics student at Columbia University. Thank you for visiting my website!<br/>
+My name is Minjie(Anna) Bao, I am a research associate in a market research consulting company to help clients develop actionable strategies. I graduated from Columbia University with a master’s degree in Biostatistics. I also had a bachelor’s degree in mathematics and statistics from Rutgers University. I defined myself, who has a strong background in problem-solving and analytical skills. I am good at using Python, SPSS, R and SAS to do machine learning, data visualization, and modeling. Thank you for visiting my website!<br/>
 
 ## Coding and Statistics
 
-I love data science and statistics, especially in building website, data visualization and modeling!
+I am a curious person that eager to keep challenging myself. I love statistics and data science!
 <br/>
-More information can be found in my digital resume created by CSS below.
+More information can be found in my digital resume below.
 <br/>
 
 Here's one example of coding Type I error simulation for 100 samples:
@@ -51,7 +51,7 @@ print(percentage)
 
 [RESUME](resume.html)
 
-Currently looking for a full-time job actively! Targeted in Statistical Programmer / Biostatistician / Consulting / Analyst / Data Scientist / Front-End Developer positions.
+Please reach out to me if you have any great job opportunities related to Consultant / Business Intelligence Engineer / Data Scientist / Front-End Developer positions.
 
 <br/>
 
@@ -60,7 +60,7 @@ Currently looking for a full-time job actively! Targeted in Statistical Programm
 
 Viewing my LinkedIn, Github, or Instagram:
 
-Appreciate your connection!!!
+Appreciate your connection.
 
 * [LinkedIn] (https://www.linkedin.com/in/anna0609)
 * [Github] (https://www.linkedin.com/in/anna0609)
@@ -84,21 +84,21 @@ gritty
 
 ### Skills
 
-SAS
+Python
 
 R
 
-Python
+SQL
 
 Java
 
-SQL
+SPSS
 
-Matlab
+SAS
 
 Microsoft (Excel, PowerPoint, Word)
 
-ANOVA
+Javascript
 
 Tableau
 
@@ -122,17 +122,17 @@ SAS Certified Professional: Advanced Programming Using SAS 9.4
 Youth Mentoring Theory and Practice
 
 ## Hobbies
-Love traveling all over the world, hiking, skiing and playing the piano! I am also very interested in classical music concert and ballet.
+Love traveling and playing the piano! I've been to more than 7 countries and play the piano more than 18 years. I am also very interested in photography.
 
-Here’s a picture of me in a sunflower filed:
+Here’s a picture of me when I was graduated from Columbia University:
 
-<img src ="images/farm.jpg" style = "width:60%">
+<img src ="images/graduation.JPG" style = "width:60%">
 
 <br/>
 
 ## Fun Facts
 
-I want to raise a Maltese puppy in the future. 
+I want to raise a cute white Maltese puppy in the future. 
 
 ![](images/puppy.gif)
 

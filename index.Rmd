@@ -13,7 +13,7 @@ output:
 
 ![](images/giphy.gif)
 
-My name is Minjie(Anna) Bao, I am a research associate in a market research consulting company to help clients develop actionable strategies. I graduated from Columbia University with a master’s degree in Biostatistics. I also had a bachelor’s degree in mathematics and statistics from Rutgers University. I defined myself, who has a strong background in problem-solving and analytical skills. I am good at using Python, SPSS, R and SAS to do machine learning, data visualization, and modeling. Thank you for visiting my website!<br/>
+My name is Minjie(Anna) Bao, I am a research associate in a market research consulting company to help clients develop actionable strategies. I graduated from Columbia University with a master’s degree in Biostatistics. I achieved bachelor’s degree in mathematics and statistics from Rutgers University. I defined myself, who has a strong background in problem-solving and data science field. I am good at using Python, SPSS, R and SAS to do machine learning, data visualization, and modeling. Thank you for visiting my website!<br/>
 
 ## Coding and Statistics
 

@@ -13,12 +13,22 @@
 
 <title>Minjie’s awesome website</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -26,10 +36,8 @@
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -41,11 +49,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -58,32 +61,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -93,10 +72,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -113,40 +88,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -174,7 +125,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -186,7 +137,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -196,11 +147,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -212,13 +180,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -226,16 +193,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -341,7 +301,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -355,7 +315,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -374,7 +334,7 @@ div.tocify {
   <a href="plotly.html">Plotly</a>
 </li>
 <li>
-  <a href="dashboard_eg.html">Dashboard</a>
+  <a href="dashboard.html">Dashboard</a>
 </li>
 <li>
   <a href="mailto:&lt;mb4757@columbia.edu&gt;">
@@ -390,19 +350,19 @@ div.tocify {
 </li>
 <li>
   <a href="https://www.instagram.com/annabao0609/">
-    <span class="fab fa fab fa-instagram"></span>
+    <span class="fab fa-instagram"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.facebook.com/profile.php?id=100004875374663">
-    <span class="fab fa fab fa-facebook"></span>
+    <span class="fab fa-facebook"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.linkedin.com/in/anna0609">
-    <span class="fab fa fab fa-linkedin"></span>
+    <span class="fab fa-linkedin"></span>
      
   </a>
 </li>
@@ -411,11 +371,11 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
-<div class="btn-group pull-right">
-<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-<ul class="dropdown-menu" style="min-width: 50px;">
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
 <li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
 <li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
 </ul>
@@ -432,12 +392,22 @@ div.tocify {
 <div id="welcome-to-minjies-website" class="section level2">
 <h2>Welcome to Minjie’s website</h2>
 <p><img src="images/giphy.gif" /></p>
-<p>I am a MS Biostatistics student at Columbia University. Thank you for visiting my website!<br/></p>
+<p>My name is Minjie(Anna) Bao, I am a research associate in a market
+research consulting company to help clients develop actionable
+strategies. I graduated from Columbia University with a master’s degree
+in Biostatistics. I achieved bachelor’s degree in mathematics and
+statistics from Rutgers University. I defined myself, who has a strong
+background in problem-solving and data science field. I am good at using
+Python, SPSS, R and SAS to do machine learning, data visualization, and
+modeling. Thank you for visiting my website!<br/></p>
 </div>
 <div id="coding-and-statistics" class="section level2">
 <h2>Coding and Statistics</h2>
-<p>I love data science and statistics, especially in building website, data visualization and modeling! <br/> More information can be found in my digital resume created by CSS below. <br/></p>
-<p>Here’s one example of coding Type I error simulation for 100 samples:</p>
+<p>I am a curious person that eager to keep challenging myself. I love
+statistics and data science! <br/> More information can be found in my
+digital resume below. <br/></p>
+<p>Here’s one example of coding Type I error simulation for 100
+samples:</p>
 <pre class="r"><code>set.seed(99)
 n.sample2 &lt;- 100
 #Sample indices
@@ -464,22 +434,27 @@ print(percentage)</code></pre>
 <div id="resume-by-css" class="section level2">
 <h2>Resume by CSS</h2>
 <p><a href="resume.html">RESUME</a></p>
-<p>Currently looking for a full-time job actively! Targeted in Statistical Programmer / Biostatistician / Consulting / Analyst / Data Scientist / Front-End Developer positions.</p>
+<p>Please reach out to me if you have any great job opportunities
+related to Consultant / Business Intelligence Engineer / Data Scientist
+/ Front-End Developer positions.</p>
 <p><br/></p>
 </div>
 <div id="key-links" class="section level2">
 <h2>Key Links</h2>
 <p>Viewing my LinkedIn, Github, or Instagram:</p>
-<p>Appreciate your connection!!!</p>
+<p>Appreciate your connection.</p>
 <ul>
-<li>[LinkedIn] (<a href="https://www.linkedin.com/in/anna0609" class="uri">https://www.linkedin.com/in/anna0609</a>)</li>
-<li>[Github] (<a href="https://www.linkedin.com/in/anna0609" class="uri">https://www.linkedin.com/in/anna0609</a>)</li>
-<li>[Instagram] (<a href="https://www.instagram.com/annabao0609/" class="uri">https://www.instagram.com/annabao0609/</a>)</li>
+<li>[LinkedIn] (<a href="https://www.linkedin.com/in/anna0609"
+class="uri">https://www.linkedin.com/in/anna0609</a>)</li>
+<li>[Github] (<a href="https://www.linkedin.com/in/anna0609"
+class="uri">https://www.linkedin.com/in/anna0609</a>)</li>
+<li>[Instagram] (<a href="https://www.instagram.com/annabao0609/"
+class="uri">https://www.instagram.com/annabao0609/</a>)</li>
 </ul>
 <p><img src ="images/support.gif" style = "width:40%"></p>
 </div>
 <div id="personality-and-skills" class="section level2 tabset">
-<h2>Personality and Skills</h2>
+<h2 class="tabset">Personality and Skills</h2>
 <div id="personality" class="section level3">
 <h3>Personality</h3>
 <p>detail-oriented</p>
@@ -490,14 +465,14 @@ print(percentage)</code></pre>
 </div>
 <div id="skills" class="section level3">
 <h3>Skills</h3>
-<p>SAS</p>
-<p>R</p>
 <p>Python</p>
-<p>Java</p>
+<p>R</p>
 <p>SQL</p>
-<p>Matlab</p>
+<p>Java</p>
+<p>SPSS</p>
+<p>SAS</p>
 <p>Microsoft (Excel, PowerPoint, Word)</p>
-<p>ANOVA</p>
+<p>Javascript</p>
 <p>Tableau</p>
 </div>
 <div id="languages" class="section level3">
@@ -516,14 +491,17 @@ print(percentage)</code></pre>
 </div>
 <div id="hobbies" class="section level2">
 <h2>Hobbies</h2>
-<p>Love traveling all over the world, hiking, skiing and playing the piano! I am also very interested in classical music concert and ballet.</p>
-<p>Here’s a picture of me in a sunflower filed:</p>
-<p><img src ="images/farm.jpg" style = "width:60%"></p>
+<p>Love traveling and playing the piano! I’ve been to more than 7
+countries and play the piano more than 18 years. I am also very
+interested in photography.</p>
+<p>Here’s a picture of me when I was graduated from Columbia
+University:</p>
+<p><img src ="images/graduation.JPG" style = "width:60%"></p>
 <p><br/></p>
 </div>
 <div id="fun-facts" class="section level2">
 <h2>Fun Facts</h2>
-<p>I want to raise a Maltese puppy in the future.</p>
+<p>I want to raise a cute white Maltese puppy in the future.</p>
 <p><img src="images/puppy.gif" /></p>
 <p><br/></p>
 <p><img src ="images/2.jpg" style = "width:60%"></p>
@@ -558,7 +536,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -572,6 +550,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

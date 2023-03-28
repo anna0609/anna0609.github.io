@@ -13,11 +13,11 @@ output:
 
 ![](images/giphy.gif)
 
-My name is Minjie(Anna) Bao, I am a research associate in a market research consulting company to help clients develop actionable strategies. I graduated from Columbia University with a master’s degree in Biostatistics. I achieved bachelor’s degree in mathematics and statistics from Rutgers University. I defined myself, who has a strong background in problem-solving and data science field. I am good at using Python, SPSS, R and SAS to do machine learning, data visualization, and modeling. Thank you for visiting my website!<br/>
+My name is Minjie. I am a research associate at a market research consulting firm, specializing in assisting clients to develop practical and effective strategies. I hold a Master's degree in Biostatistics from Columbia University. Thank you for visiting my website!<br/>
 
 ## Coding and Statistics
 
-I am a curious person that eager to keep challenging myself. I love statistics and data science!
+I am an inherently curious individual, constantly seeking new challenges and opportunities for personal and professional growth. My passion for statistics and data science is unwavering, driving my motivation to excel in this field.
 <br/>
 More information can be found in my digital resume below.
 <br/>
@@ -51,16 +51,14 @@ print(percentage)
 
 [RESUME](resume.html)
 
-Please reach out to me if you have any great job opportunities related to Consultant / Business Intelligence Engineer / Data Scientist / Front-End Developer positions.
+Please feel free to contact me if you know of any exciting job opportunities related to Consultant, Business Intelligence Engineer, Data Scientist, or Front-End Developer positions.
 
 <br/>
 
 
 ## Key Links
 
-Viewing my LinkedIn, Github, or Instagram:
-
-Appreciate your connection.
+Thank you for connecting with me. Please feel free to check out my LinkedIn, Github, or Instagram profiles.
 
 * [LinkedIn] (https://www.linkedin.com/in/anna0609)
 * [Github] (https://www.linkedin.com/in/anna0609)
@@ -122,11 +120,12 @@ SAS Certified Professional: Advanced Programming Using SAS 9.4
 Youth Mentoring Theory and Practice
 
 ## Hobbies
-Love traveling and playing the piano! I've been to more than 7 countries and play the piano more than 18 years. I am also very interested in photography.
 
-Here’s a picture of me when I was graduated from Columbia University:
+I am an avid traveler and pianist, having explored over 7 countries and played the piano for more than 18 years. In addition, I have a keen interest in photography.
 
-<img src ="images/graduation.JPG" style = "width:60%">
+Attached is a photo of me at my graduation from Columbia University.
+
+<img src ="images/graduation.JPG" style = "width:40%">
 
 <br/>
 
